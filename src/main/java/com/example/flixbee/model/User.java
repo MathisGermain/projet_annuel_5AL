@@ -9,14 +9,8 @@ public class User {
     private String email;
     private String name;
     private String firstname;
+    private String password;
     private List<UserRole> roles;
-
-    public User(String id, String email, String name, String firstname) {
-        this.id = id;
-        this.email = email;
-        this.name = name;
-        this.firstname = firstname;
-    }
 
     public String getId() {
         return id;
@@ -56,6 +50,14 @@ public class User {
 
     public void setRoles(List<UserRole> roles) {
         this.roles = roles;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     @Override
